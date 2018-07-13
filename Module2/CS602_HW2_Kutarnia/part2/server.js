@@ -106,7 +106,6 @@ app.get('/lastName/:lastName', (req, res) => {
 
 //POST Requests
 app.post('/api/addEmployee', (req, res) => {
-	console.log("POST");
 	employeeModule.addEmployee(req.body.firstName, req.body.lastName);
 	res.redirect('/lastName/'+'Smith');
 });
