@@ -1,0 +1,4 @@
+This issue is caused by the fact that the variables in the JS hold a reference to the actual object itself in the data array. 
+So when we created the variable reference and changed the name in the variable, it actually changed it in the data array.
+In order to prevent this issue from occuring, you can instantiate and return a new 'employee' JSON object like I did in the function
+assigned to the variable v4 in employeeModule_v1.

@@ -1,0 +1,18 @@
+{
+  "name": "part2",
+  "version": "1.0.0",
+  "description": "Module 2 HW assignment part 2 ",
+  "main": "employeeModule.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Eric Kutarnia",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "underscore": "^1.9.1"
+  }
+}
