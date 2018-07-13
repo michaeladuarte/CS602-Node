@@ -1,0 +1,19 @@
+<!--Use style sheet located under public/css which is set by express constant in server.js-->
+<link rel="stylesheet" href="/css/style.css">
+<b>Employee List</b>
+<hr/>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+    </tr>
+    {{#each records}}
+    <tr>
+        <td>{{this.id}}</td>
+        <td>{{this.firstName}}</td>
+        <td>{{this.lastName}}</td>
+    </tr>
+    {{/each}}
+</table>
+

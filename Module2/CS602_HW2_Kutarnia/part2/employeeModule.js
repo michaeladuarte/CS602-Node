@@ -27,9 +27,15 @@ var f3 = (first, Last) => {
     return cID;
 };
 
+//get all employees NEW
+var f4 = () =>{
+    return data;
+}
+
 
 module.exports = {
     lookupByID: f1,
     lookupByLastName: f2,
-    addEmployee: f3
+    addEmployee: f3,
+    getAllEmployees: f4
 };
