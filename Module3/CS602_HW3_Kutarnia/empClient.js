@@ -9,11 +9,9 @@ const connection = mongoose.createConnection(dbUrl);
 const EmployeeDb = require('./routes/employeeDb.js');
 const Employee = EmployeeDb.getModel(connection);
 
-connection.on("open", () => {
-	
+connection.on("open", () => {	
 	// create and save document objects
 	let employee;
-
 	employee = new Employee({
 		firstName: 'John',
 		lastName: 'Smith'
@@ -21,29 +19,30 @@ connection.on("open", () => {
 	employee.save((err) => {
 		connection.close();
 		if (err) throw err;
-		console.log("Successfully added: " + employee.firstName);
+		console.log("Successfully added: " + employee.firstName + ' ' + employee.lastName);
     });
 
-    employee = new Employee({
+	let employee1;
+    employee1 = new Employee({
 		firstName: 'Jane',
 		lastName: 'Smith'
 	});  
-	employee.save((err) => {
+	employee1.save((err) => {
 		connection.close();
 		if (err) throw err;
-		console.log("Successfully added: " + employee.firstName);
+		console.log("Successfully added: " + employee1.firstName + ' ' + employee1.lastName);
     });
 
-    employee = new Employee({
+	let employee2;
+    employee2 = new Employee({
 		firstName: 'John',
 		lastName: 'Doe'
 	});  
-	employee.save((err) => {
+	employee2.save((err) => {
 		connection.close();
 		if (err) throw err;
-		console.log("Successfully added: " + employee.firstName);
+		console.log("Successfully added: " + employee2.firstName + ' ' + employee2.lastName);
 	});
-	
 });
 
 
