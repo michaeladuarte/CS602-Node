@@ -1,0 +1,20 @@
+{
+  "name": "cs602_hw3_kutarnia",
+  "version": "1.0.0",
+  "description": "CS602 Module 3 Homework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eric Kutarnia",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "js2xmlparser": "^3.0.0",
+    "mongodb": "^3.1.1",
+    "mongoose": "^5.2.4",
+    "nodemon": "^1.18.3",
+    "underscore": "^1.9.1"
+  }
+}
